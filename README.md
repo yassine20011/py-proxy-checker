@@ -1,4 +1,4 @@
-# py-proxy-checker 0.1.3
+# py-proxy-checker
 
 
 This is a simple python script to check if a proxy is working or not and to check the speed of the proxy.
