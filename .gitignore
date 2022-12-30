@@ -1,1 +1,3 @@
+/dist
+.proxies.txt
 .test.py
