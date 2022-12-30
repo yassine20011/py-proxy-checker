@@ -35,6 +35,3 @@ class CheckerProxy():
                 pass                
             
         return working_proxy
-
-P = CheckerProxy()
-print(P.checker_proxy("proxies.txt"))

@@ -1,0 +1,10 @@
+README.md
+license.txt
+setup.py
+checkerproxy/__init__.py
+checkerproxy/checkerproxy.py
+py_proxy_checker.egg-info/PKG-INFO
+py_proxy_checker.egg-info/SOURCES.txt
+py_proxy_checker.egg-info/dependency_links.txt
+py_proxy_checker.egg-info/requires.txt
+py_proxy_checker.egg-info/top_level.txt

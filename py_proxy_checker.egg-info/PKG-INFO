@@ -1,3 +1,16 @@
+Metadata-Version: 2.1
+Name: py-proxy-checker
+Version: 0.1.5
+Summary: A simple checkerproxy library
+Author: Yassine Amjad
+Author-email: Yassine.amjad001@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: license.txt
+
 # py-proxy-checker 0.1.3
 
 

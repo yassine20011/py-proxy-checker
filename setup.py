@@ -1,11 +1,18 @@
 import setuptools
 
+# read the contents of your README file
+from pathlib import Path
+this_directory = Path(__file__).parent
+long_description = (this_directory / "README.md").read_text()
+
 setuptools.setup(
     name="py-proxy-checker",
-    version="0.1.2",
+    version="0.1.5",
     author="Yassine Amjad",
     author_email="Yassine.amjad001@gmail.com",
     description="A simple checkerproxy library",
+    long_description=long_description,
+    long_description_content_type='text/markdown',
     packages=["checkerproxy"],
     install_requires=["requests"],
     classifiers=[

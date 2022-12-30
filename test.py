@@ -1,5 +1,5 @@
-from  checkerproxy import  CheckerProxy
+from checkerproxy import CheckerProxy
 
-checker = CheckerProxy()
+P = CheckerProxy()
+print(P.check("proxies.txt"))
 
-checker.checker_proxy("proxies.txt")
