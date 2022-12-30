@@ -7,7 +7,7 @@ long_description = (this_directory / "README.md").read_text()
 
 setuptools.setup(
     name="py-proxy-checker",
-    version="0.1.5",
+    version="0.1.6",
     author="Yassine Amjad",
     author_email="Yassine.amjad001@gmail.com",
     description="A simple checkerproxy library",
