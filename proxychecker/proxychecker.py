@@ -84,4 +84,3 @@ class Checker():
             raise requests.exceptions.ConnectionError(
                 "Please check your internet connection and try again"
             ) from e
-            

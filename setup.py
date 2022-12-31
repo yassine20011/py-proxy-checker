@@ -14,7 +14,7 @@ setuptools.setup(
     description="A simple proxy checker library",
     long_description=long_description,
     long_description_content_type='text/markdown',
-    packages=["checkerproxy"],
+    packages=["proxychecker"],
     install_requires=["requests"],
     classifiers=[
         "Programming Language :: Python :: 3",
