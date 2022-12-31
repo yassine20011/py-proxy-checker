@@ -11,7 +11,7 @@ setuptools.setup(
     author="Yassine Amjad",
     author_email="Yassine.amjad001@gmail.com",
     url="https://github.com/yassine20011/py-proxy-checker",
-    description="A simple proxy checker library",
+    description="Proxy Checker is a python package that allows you to check the validity of a proxy",
     long_description=long_description,
     long_description_content_type='text/markdown',
     packages=["proxychecker"],
@@ -23,4 +23,5 @@ setuptools.setup(
     ],
     python_requires='>=3.6',
     license='MIT',
+    keywords='proxy checker',
     )
