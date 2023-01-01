@@ -99,7 +99,6 @@ class Checker():
                 info_list = []
                 for proxy in proxy_list:
                     url = f"https://ipapi.co/{proxy.split(':')[0] }/json/"
-                    print(url)
                     response = requests.get(url)
                     response.raise_for_status()
                     if response.status_code != 204:
