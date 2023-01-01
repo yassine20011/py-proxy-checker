@@ -4,6 +4,41 @@ import requests
 
 
 class Checker():
+    """Proxy Checker is a python package that allows you to check the validity of a proxy,
+    >>> from proxychecker import Checker
+    >>> checker = Checker()
+    >>> proxies = checker.check("proxies.txt")
+    >>> print(proxies)
+    {
+    ...
+    2: {
+    'proxy': '77.109.178.218:80', 
+    'Timeout': 529}
+    ...
+    }
+    >>> print(checker.info(proxies[2]['proxy']))
+    {
+        'ip': '210.245.124.131', 
+        'network': '210.245.112.0/20', 
+        'version': 'IPv4', 
+        ...
+    }
+
+    also you can check the proxy information of a list of proxies
+    >>> list = [proxies[proxy]['proxy'] for proxy in proxies]
+    >>> print(checker.info(proxy_list=list))
+    [
+        ...,
+        {
+        'ip': '210.245.124.131', 
+        'network': '210.245.112.0/20', 
+        'version': 'IPv4', 
+        ...
+        },
+        ...
+    ]
+
+    """
 
     def __init__(self):
         pass
@@ -38,8 +73,9 @@ class Checker():
                 if response.status_code == 200:
 
                     proxy_dict["proxy"] = line.replace("\n", "")
-                    proxy_dict["Timeout"] = int(response.elapsed.total_seconds() * 1000)
-                    
+                    proxy_dict["Timeout"] = int(
+                        response.elapsed.total_seconds() * 1000)
+
                     working_proxy[counter] = proxy_dict
                     counter += 1
 
@@ -48,7 +84,7 @@ class Checker():
 
         return working_proxy
 
-    def info(self, ip: str, proxy_list: list[str] = None):
+    def info(self, ip: str = None, proxy_list: list[str] = None):
         """This function will return the proxy information,
 
         :param ip: The ip address of the proxy
@@ -72,7 +108,7 @@ class Checker():
                         info_list.append(
                             f'Invalid IP Address {proxy.split(":")[0]} or something went wrong')
                 return info_list
-            else:
+            elif ip is not None:
                 url = f"https://ipapi.co/{ip.split(':')[0]}/json/"
                 response = requests.get(url)
                 response.raise_for_status()
