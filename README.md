@@ -37,10 +37,10 @@ print(checker.info(proxies[2]['proxy']))
     }
 
 
-list = [proxies[proxy]['proxy'] for proxy in proxies]
+proxy_list = [proxies[proxy]['proxy'] for proxy in proxies]
 
 #Get the information of each proxy in the list
-print(checker.info(proxy_list=list))
+print(checker.info(proxy_list=proxy_list))
 
     [
         ...,
