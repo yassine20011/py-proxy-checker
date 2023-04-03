@@ -1,8 +1,6 @@
 # py-proxy-checker
 <img src="https://img.shields.io/pypi/dm/py-proxy-checker?logo=pypi&logoColor=white">
 
-# py-proxy-checker
-
 This is a simple python script to check if a proxy is working or not and to check the speed of the proxy.
 
 ## Installation
